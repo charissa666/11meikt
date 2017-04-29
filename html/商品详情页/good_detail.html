@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<link rel="stylesheet" type="text/css" href="../../css/goodList.css" />
+		<link rel="stylesheet" type="text/css" href="../../css/header.css"/>
+		<script src="../../js/jquery1.7.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../../js/goods.js" type="text/javascript" charset="utf-8"></script>
+		<title>单品详情页</title>
+	</head>
+
+	<body>
+		<!--引入头部-->
+		<div id="head"></div>
+		
+		<script type="text/javascript">
+			$('#head').load('../header.html');
+		</script>
+		
+		
+		<!--单品详情内容-->
+		<div class="comWid">
+			<!--面包屑导航-->
+			<div class="list_top">
+				<a href="javascript:;">每康团频道</a>>
+				<a href="javascript:;">品牌团</a>>
+				<a href="javascript:;">电子血压计</a>>
+				<a href="javascript:;">欧姆龙电子血压计</a>
+			</div>
+
+			<!--商品信息区域开始-->
+			<div class="good_inf">
+				<div class="g_left">
+					<!--放大镜-->
+					<div class="g_left_item1">
+		            	<div class="mark">
+		                	<img id="centImg" src="../../images/3370ac648742d200ea1fdf81d899ba0a54ff8d56.jpg" alt=""/>
+		                    <div class="shade"></div>
+		                </div>
+		                <div class="max_img">
+		                	<img id="maxImg" src="../../images/3370ac648742d200ea1fdf81d899ba0a54ff8d56.jpg" alt=""/>
+		                </div>
+					</div>
+					<!--收藏跟分享-->
+					<!--<div class="g_left_item2">
+						<div class="collect"><span></span>收藏本品</div>
+						<div class="bdsharebuttonbox">
+							<span></span>
+							<a href="#" class="bds_more" data-cmd="more" style="background:none;padding-left:0;">分享到</a>
+						</div>
+						<script>
+							window._bd_share_config = {
+								"common": {
+									"bdSnsKey": {},
+									"bdText": "",
+									"bdMini": "2",
+									"bdPic": "",
+									"bdStyle": "0",
+									"bdSize": "16"
+								},
+								"share": {},
+								"image": {
+									"viewList": ["qzone", "tsina", "tqq", "renren", "weixin"],
+									"viewText": "分享到：",
+									"viewSize": "16"
+								},
+								"selectShare": {
+									"bdContainerClass": null,
+									"bdSelectMiniList": ["qzone", "tsina", "tqq", "renren", "weixin"]
+								}
+							};
+							with(document) 0[(getElementsByTagName('head')[0] || body).appendChild(createElement('script')).src = 'http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion=' + ~(-new Date() / 36e5)];
+						</script>
+					</div>-->
+				</div>
+				<div class="g_right">
+					<div class="g_inf">
+						<h3>乳果糖口服溶液（度秘克）</h3>
+						<div>
+							<span>规&nbsp;&nbsp;&nbsp;&nbsp;格：</span>
+							<span>15ml*6袋/盒</span>
+						</div>
+						<div>
+							<span>剂&nbsp;&nbsp;&nbsp;&nbsp;型：</span>
+							<span>口服溶液剂</span>
+						</div>
+						<div>
+							<span>商品编码：</span>
+							<span>1048120</span>
+						</div>
+						<div>
+							<span>生产企业：</span>
+							<span>Abbott Biological.v</span>
+						</div>
+						<div>
+							<span>库&nbsp;&nbsp;&nbsp;&nbsp;存：</span>
+							<span id="maxNum">50</span>
+						</div>
+					</div>
+					<!--非抢购的商品-->
+					<!--<div class="g_price">
+						<div>团购价：￥<em>111.11</em><del>市场价：￥<span>12321.11</span></del></div>
+					</div>-->
+					
+					<!--抢购的商品-->
+					<div class="g_price g_price_time">
+						<input type="hidden" value="1474646400000" id="startTime"/>		<!--时间戳 或者两位数的小时-->
+						<input type="hidden" value="1475164800000" id="endTime"/>		<!--时间戳 或者两位数的小时-->
+						<div>
+							团购价：￥<em>111.11</em><del>市场价：￥<span>12321.11</span></del>
+						</div>
+						<div class="count_time">
+							<i>距开始还有</i>
+							<b id="time1"></b><b id="time2"></b>天
+							<b id="time3"></b><b id="time4"></b>时
+							<b id="time5"></b><b id="time6"></b>分
+							<b id="time7"></b><b id="time8"></b>秒
+						</div>
+					</div>
+					<div class="g_txt">
+						<p>郑重声明：</p>
+						<p>尊敬的顾客，受药房网各门店委托，药房网为各门店提供药品信息发布服务， 您的需求信息提交后，将由药房网各门店为您提供销售及药学服务。</p>
+					</div>
+					<div class="g_num">
+						<span id="reduce">-</span>
+						<input type="text" value="1" id="num"/>
+						<span id="add">+</span>
+						<i>已售<em>4414</em></i>
+					</div>
+					<div class="g_btn">
+						<a href="javascript:;" class="add_btn">加入团购清单</a>	
+						<a href="../购物车/tuan_shopCar.html" class="buy_btn">马上团</a>
+					</div>
+					<div class="car_hint"></div>
+				</div>
+			</div>
+			<!--商品信息区域结束-->
+			<!--图片展示区开始-->
+			<div class="show_area">
+				<h3>商品图展示区</h3>
+				<div>
+					<img src="../../images/2e3da0b0548d80ac48d9dc19e18ef9fb779dff24.jpg"/>
+					<img src="../../images/3370ac648742d200ea1fdf81d899ba0a54ff8d56.jpg"/>
+					<img src="../../images/e0e40474a48afc0f311b13786a40d2a2695be9ab.jpg"/>
+					<img src="../../images/ea391b8b293b42e79e72c7beae3e439d3026af79.jpg"/>
+					<img src="../../images/shuoming.jpg"/>
+				</div>
+			</div>
+			<!--图片展示区结束-->
+		</div>
+		
+		<!--底部-->
+		<div style="height:120px;background:#ccc;margin-top:20px;">底部</div>
+	</body>
+</html>

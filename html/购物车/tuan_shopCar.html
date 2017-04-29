@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" type="text/css" href="../../css/header.css"/>
+		<link rel="stylesheet" type="text/css" href="../../css/shopCar.css"/>
+		<script src="../../js/jquery1.7.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../../js/shopCar.js" type="text/javascript" charset="utf-8"></script>
+		<title>我的需求清单</title>
+	</head>
+	<body>
+		<!--引入头部-->
+		<div id="head"></div>
+		
+		<script type="text/javascript">
+			$('#head').load('../header.html .header_top');
+		</script>
+		
+		<!--头部-->
+		<div class="comWid">
+			<div class="hLeft fl">
+				<a href="javascript:;"><img src="../../images/mkt_logo.png"/></a>
+				<span>我的需求清单</span>
+			</div>
+			<div class="hRight fr">
+				<div class="shopIcon"></div>
+				<div>
+					<span>1.我的需求清单</span>
+					<span class="gray1">2.填写核对信息</span>
+					<span class="gray1">3.成功提交</span>
+				</div>
+			</div>
+		</div>
+		<!--购物车-->
+		<div class="comWid total_head">
+			<div class="t_tit fl">全部商品<span id="top_selectedTotal">0</span></div>
+			<div class="t_titR fr">
+				<span>￥<i id="top_priceTotal">0.00</i></span>
+				<a href="javascript:;" class="goBuy">结算</a>
+			</div>
+		</div>
+		<div class="catbox">
+			<table id="cartTable">
+				<thead>
+					<tr style="border:none;height:30px;">
+						<th style="width: 85px;text-align: left;padding-left:10px;"><label><input class="check-all check" type="checkbox"/>&nbsp;全选</label></th>
+						<th>&nbsp;</th>
+						<th width="300">商品名称</th>
+						<th width="170">商品规格</th>
+						<th width="190">商品单价</th>
+						<th>数量</th>
+						<th style="display: none;">小计</th>
+						<th width="155">操作</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr flg="store_tr" class="store_tr">
+						<td colspan="6">
+							<input class="check-one check" name="check-two" type="checkbox"/>
+							<span>此商品由<b>北京-大兴-文化园分店</b>提供服务<i class="ziy">自营</i></span>
+						</td>
+					</tr>
+					<tr>
+						<td class="checkbox"><input class="check-one check" type="checkbox"/></td>
+						<td class="goods"><a href="../商品详情页/good_detail.html"><img src="../../images/3370ac648742d200ea1fdf81d899ba0a54ff8d56.jpg" alt=""/></a></td>
+						<td><a href="../商品详情页/good_detail.html">欧淬恩鱼油软胶囊</a></td>
+						<td>60g(1g*60粒)/盒</td>
+						<td class="price">280</td>
+						<td class="count"><span class="reduce">-</span><input class="count-input" type="text" value="3"/><span class="add">+</span></td>
+						<td class="subtotal" style="display: none;">280</td>
+						<td class="operation"><span class="delete">删除</span></td>
+					</tr>
+					<tr flg="activeEnd">
+						<td class="checkbox"><input class="check-one check" type="checkbox"/></td>
+						<td class="goods"><a href="../商品详情页/good_detail.html"><img src="../../images/3370ac648742d200ea1fdf81d899ba0a54ff8d56.jpg" alt=""/></a></td>
+						<td><a href="../商品详情页/good_detail.html">欧淬恩鱼油软胶囊</a></td>
+						<td>60g(1g*60粒)/盒</td>
+						<td class="price">280</td>
+						<td class="count"><span class="reduce">-</span><input class="count-input" type="text" value="1"/><span class="add">+</span></td>
+						<td class="subtotal" style="display: none;">280</td>
+						<td class="operation"><span class="delete">删除</span></td>
+					</tr>
+					<tr flg="store_tr" class="store_tr">
+						<td colspan="6">
+							<input class="check-one check" name="check-two" type="checkbox"/>
+							<span>此商品由<b>北京-大兴-文化园分店</b>提供服务<i class="sanf">三方</i></span>
+						</td>
+					</tr>
+					<tr>
+						<td class="checkbox"><input class="check-one check" type="checkbox"/></td>
+						<td class="goods"><a href="../商品详情页/good_detail.html"><img src="../../images/3370ac648742d200ea1fdf81d899ba0a54ff8d56.jpg" alt=""/></a></td>
+						<td><a href="../商品详情页/good_detail.html">欧淬恩鱼油软胶囊</a></td>
+						<td>60g(1g*60粒)/盒</td>
+						<td class="price">280</td>
+						<td class="count"><span class="reduce">-</span><input class="count-input" type="text" value="1"/><span class="add">+</span></td>
+						<td class="subtotal" style="display: none;">280</td>
+						<td class="operation"><span class="delete">删除</span></td>
+					</tr>
+				</tbody>
+			</table>
+			<div class="foot" id="foot">
+				<label class="fl foot-label"><input class="check-all check" type="checkbox"/>&nbsp;全选</label>
+				<a class="fl delete" id="deleteAll" href="javascript:;">删除选中商品</a>
+				<div class="fr closing"><a href="javascript:;"></a>结 算</div>
+				<div class="fr total">总计(不含配送服务费)：<i>￥<span id="priceTotal">0.00</span></i></div>
+				<div class="fr selected" id="selected">已选商品<span id="selectedTotal">0</span>件</div>
+			</div>
+		</div>
+		
+		<!--底部-->
+		<div style="height:300px;background:#ccc;"></div>
+		
+		
+		
+		
+	</body>
+</html>

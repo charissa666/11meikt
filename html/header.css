@@ -1,0 +1,65 @@
+/*通用样式*/
+body,div,p,h1,h2,h3,h4,h5,h6,ul,li,ol,dl,dt,dd,table,tr,td,th,form{margin:0;padding:0;}
+ul,ol,li{list-style:none;}
+img{display:block;border:0;}
+a{color:#000;text-decoration:none;outline:none;}
+a:hover{text-decoration: none;}
+body{font:12px/1.5 "Microsoft YaHei","Arial, Helvetica, sans-serif";color:#515151;}
+i,em{font-style: normal;}
+.comWid{width:1200px;margin:0px auto;clear:both;}
+.fl{float:left;}
+.fr{float:right;}
+
+/*头部*/
+.header_0923{width:100%;}
+.header_top{height:30px;width:100%;border-bottom: 1px solid #e0dfdf;}
+.allshop{float:left;line-height: 30px;}
+.allshop>ul{width:14px;height:14px;float: left;margin-top:9px;margin-right:4px;}
+.allshop>ul>li{width:4px;height:4px;border:1px solid #ff8d08;float:left;margin:0 1px 1px 0;}
+.allshop>a{font-size: 14px;color:#ff8a00;margin-right:10px;font-weight:bold;}
+.allshop>span{color:#929292;}
+.h_topList{float: right;}
+.h_topList>li{float:left;color:#929292;margin-top:9px;height:22px;}
+.h_topList a{color:#929292;height:14px;line-height:14px;margin-right:7px;border-left:1px solid #e6e6e6;padding-left:28px;background-image: url(../images/headIcon1.jpg);background-repeat: no-repeat;}
+.h_topList a:hover{color:#929292;text-decoration: none;}
+.h_topList>.topList00{margin-right:10px;padding-right:10px;}
+.h_topList>.topList00>a{background:none;border:none;padding:0px;margin:0px;}
+.h_topList>.topList01>a{background-position: left -2px;}
+.h_topList>.topList02>a{background-position: left -20px;}
+.h_topList>.topList03>a{background-position: left -39px;}
+.h_topList>.topList04>a{background-position: left -58px;}
+.quitBtn:hover{color:#f3991e;}
+.h_topList>.topList00>a{color:#0153a7;margin-left:8px;}
+.h_topList>.topList02,.h_topList>.topList03{position:relative;}
+.sub_erw{display:none;position: absolute;left:-1px;top:21px;z-index:11;}
+.topList02:hover .topList_a,.topList03:hover .topList_a{background-position: left -10px;}
+.sub_03{display:none;width:100%;border:1px solid #eaeaea;position: absolute;left:0px;top:21px;background:#fff;}
+.sub_03>li>a{display:block;height:28px;line-height: 28px;padding-left:27px;border-left:none;}
+.sub03_qq{background-position: left -74px;}
+.sub03_leyu{background-position: left -105px;}
+.topList_a{display:inline-block;width:7px;height:10px;margin-left:7px;background-image: url(../images/headIcon2.jpg);background-repeat: no-repeat;}
+.topList02:hover>.sub_erw{display: block;}
+.topList03:hover>.sub_03{display: block;}
+
+
+/*logo区域*/
+.h_logo{height:90px;}
+.h_logoL{float:left;margin:12px 280px 0 7px;}
+.h_logoC{float: left;margin-top:28px;}
+.h_logoC>input{border:none;outline:none;width:384px;height:36px;line-height:36px;padding-left:10px;border:2px solid #0054a7;box-sizing: border-box;float: left;}
+.h_searchBtn{width:80px;height:36px;background:#0054A7;line-height: 36px;text-align: center;color:#fff;font-size: 16px;float: left;cursor: pointer;}
+.h_logoR{float: right;width:130px;height:40px;line-height:40px;border:1px solid #ddd;margin:25px 17px 0 0;color:#929292;cursor: pointer;}
+.h_logoR:hover{border:1px solid #f3991e;}
+.h_logoR>img{float:left;margin:8px 11px 0 14px;}
+.car_num{color:#f3991e;margin-left:5px;}
+
+/*nav导航*/
+.navList{width:100%;height:38px;background:#0054a7;font-size:16px;}
+.navList li{float: left;}
+.navList a{display:inline-block;padding:0 28px;color:#fff;height:38px;line-height: 38px;}
+.navList a.on{background:#186ec3;}
+.navList a.on:hover{background:#186ec3;}
+.navList a:hover{background:#02478b;}
+
+
+
